@@ -46,7 +46,7 @@ public class House extends Asset {
     public double getValue() {
         double value;
 
-        if ( condition == 1) {
+        if (condition == 1) {
             value = squareFoot * 180.00;
         } else if (condition == 2) {
             value = squareFoot * 130.00;

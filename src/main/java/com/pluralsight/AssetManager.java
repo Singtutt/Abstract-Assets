@@ -15,8 +15,8 @@ public class AssetManager {
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription() +
                     "\nDate Acquired: " + asset.getDateAcquired() +
-                    "\n\tOriginal Cost: " + asset.getOriginalCost() +
-                    "\n\tValue: " + asset.getValue());
+                    "\n\tOriginal Cost: $" + asset.getOriginalCost() +
+                    "\n\tValue: $" + asset.getValue());
 
             if (asset instanceof House) {
                 House house = (House) asset;
