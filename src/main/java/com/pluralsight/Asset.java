@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Asset {
+public abstract class Asset {
     private String dateAcquired;
     private String description;
     private double originalCost;
@@ -21,9 +21,6 @@ public class Asset {
     public double getOriginalCost() {
         return originalCost;
     }
-    public double getValue() {
-        return originalCost;
-    }
 
 //    Setters
     public void setDateAcquired(String dateAcquired) {
@@ -35,4 +32,7 @@ public class Asset {
     public void setOriginalCost(double originalCost) {
         this.originalCost = originalCost;
     }
+
+//    Abstract Method
+    public abstract double getValue();
 }

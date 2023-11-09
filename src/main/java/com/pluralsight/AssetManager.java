@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class AssetManager {
     public static void main(String[] args) {
-
         ArrayList<Asset> assets = new ArrayList<>();
 
         assets.add(new House("11-08-2023", "Sing's Home", 400000.0, "123 Southside Blvd", 1, 2500, 10000));
@@ -27,5 +26,10 @@ public class AssetManager {
             }
             System.out.println();
         }
+//        Testing Cash Class
+        Cash cash = new Cash("11-09-2023", "Rainy Day Funds", 10000.0);
+        System.out.println("Description: " + cash.getDescription() +
+                "\nDate: " + cash.getDateAcquired() +
+                "\n\tAmount: $" + cash.getOriginalCost());
     }
 }
